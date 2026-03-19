@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('html/_head.html', {})
+    @@include('html/_head.html', {
+    "title": "Главная страница"
+    })
     <body>
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-
+                <section class="hero">
+                    <div class="hero__container container">
+                        <div class="hero__content">
+                            <h1 class="hero__title">Научно-исследовательский испытательный центр Искра-Волга</h1>
+                            <div id="about" class="hero__details">
+                                <article class="hero__about">
+                                    <h2 class="hero__about-title title">О центре</h2>
+                                    <p class="hero__about-desc">
+                                        Научно-исследовательский испытательный центр —
+                                        уникальный проект, объединяющий научные исследования
+                                        и конструкторские разработки, диагностику и испытания электротехнической продукции классов напряжений
+                                        от 0,4 до 500 кВ, а также обучение и подготовку специалистов для энергетики.
+                                    </p>
+                                    <p class="hero__about-purpose">Цели создания НИИЦ – укрепление технологического суверенитета страны и развитие ее научно-исследовательского потенциала путем внедрения перспективных технических решений в энергетической отрасли.</p>
+                                </article>
+                                <div class="hero__structure">
+                                    <h2 class="hero__structure-title title-sm">Cтруктура НИИЦ</h2>
+                                    <ol class="hero__structure-list">
+                                        <li class="hero__structure-item">
+                                            <p class="hero__structure-text">Исследовательские и опытно-конструкторские отделы</p>
+                                            <div class="hero__structure-icon">
+                                                <img src="@img/hero/01.svg" alt="Иконка">
+                                            </div>
+                                        </li>
+                                        <li class="hero__structure-item">
+                                            <p class="hero__structure-text">Испытательная высоковольтная лаборатория</p>
+                                            <div class="hero__structure-icon">
+                                                <img src="@img/hero/02.svg" alt="Иконка">
+                                            </div>
+                                        </li>
+                                        <li class="hero__structure-item">
+                                            <p class="hero__structure-text">Лаборатории физико-механических и климатических испытаний</p>
+                                            <div class="hero__structure-icon">
+                                                <img src="@img/hero/03.svg" alt="Иконка">
+                                            </div>
+                                        </li>
+                                        <li class="hero__structure-item">
+                                            <p class="hero__structure-text">Электролаборатория</p>
+                                            <div class="hero__structure-icon">
+                                                <img src="@img/hero/04.svg" alt="Иконка">
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <ul class="hero__numbers">
+                                <li class="hero__number">
+                                    <div class="hero__number-value">
+                                        <span data-counting>2300</span> м²
+                                    </div>
+                                    <div class="hero__number-subtitle">общая площадь здания</div>
+                                </li>
+                                <li class="hero__number">
+                                    <div class="hero__number-value">
+                                        <span data-counting>1500</span> м²
+                                    </div>
+                                    <div class="hero__number-subtitle">площадь лаборатории</div>
+                                </li>
+                                <li class="hero__number">
+                                    <div class="hero__number-value">
+                                        <span data-counting>200</span> ед.
+                                    </div>
+                                    <div class="hero__number-subtitle">оборудования</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="testing-lab">
+                    <div class="testing-lab__container container">
+                        <h2 class="testing-lab__title title">Испытательная лаборатория</h2>
+                        <div class="testing-lab__slider swiper">
+                            <ul class="swiper-wrapper">
+                                @@loop('./html/templates/_testing-lab-slide.html', './html/json/testing-lab.json')
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="services" class="measurements">
+                    <div class="measurements__container container">
+                        <h2 class="measurements__title title">Испытания и измерения</h2>
+                        <ul class="measurements__list">
+                            @@loop('./html/templates/_measurements-item.html', './html/json/measurements.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="electrical-engineering-lab">
+                    <div class="electrical-engineering-lab__container container">
+                        <div class="electrical-engineering-lab__main">
+                            <h2 class="electrical-engineering-lab__title title">Электротехническая лаборатория</h2>
+                            <ul class="electrical-engineering-lab__list">
+                                <li>Диагностика и испытания силовых трансформаторов</li>
+                                <li>Проверка состояния заземляющих устройств (ЗУ)</li>
+                                <li>Испытания сборных и соединительных шин</li>
+                                <li>Испытания и измерения вентильных разрядников и ОПН</li>
+                                <li>Испытания и измерения элегазовых, вакуумных, масляных выключателей и выключателей нагрузки</li>
+                                <li>Испытания кабельных линий</li>
+                            </ul>
+                        </div>
+                        <ul class="electrical-engineering-lab__benefits">
+                            <li class="electrical-engineering-lab__benefit">
+                                <div class="electrical-engineering-lab__benefit-icon">
+                                    <img src="@img/electrical-engineering-lab/01.svg" alt="Иконка">
+                                </div>
+                                <p class="electrical-engineering-lab__benefit-text">Измерения и испытания электрооборудования на действующих объектах до 1000 В и выше.</p>
+                            </li>
+                            <li class="electrical-engineering-lab__benefit">
+                                <div class="electrical-engineering-lab__benefit-icon">
+                                    <img src="@img/electrical-engineering-lab/02.svg" alt="Иконка">
+                                </div>
+                                <p class="electrical-engineering-lab__benefit-text">Наличие официально подтверждённой аттестации в Ростехнадзоре</p>
+                            </li>
+                            <li class="electrical-engineering-lab__benefit">
+                                <div class="electrical-engineering-lab__benefit-icon">
+                                    <img src="@img/electrical-engineering-lab/03.svg" alt="Иконка">
+                                </div>
+                                <p class="electrical-engineering-lab__benefit-text">Широкий спектр услуг по диагностике и испытанию электрооборудования.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="gallery" class="gallery">
+                    <div class="gallery__container container">
+                        <div class="gallery__header">
+                            <h2 class="gallery__title title">Галерея центра</h2>
+                            <div class="gallery__controls">
+                                <button type="button" class="gallery__prev swiper-button-prev"></button>
+                                <button type="button" class="gallery__next swiper-button-next"></button>
+                            </div>
+                        </div>
+                        <div class="gallery__slider swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/templates/_gallery-item.html', './html/json/gallery.json')
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             @@include('html/_footer.html', {})
             @@include('html/_js.html', {})

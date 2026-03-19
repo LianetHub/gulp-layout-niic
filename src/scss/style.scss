@@ -11,8 +11,7 @@
 // ======================================ШРИФТЫ===============================================
 
 // Шрифт по умолчанию
-$fontfamily: "TTFirsNeue";
-$font-onest: "Onest";
+$fontfamily: "Onest";
 // Шрифт по умолчанию
 
 $md1: 1399.98px;
@@ -26,13 +25,15 @@ $md6: 389.98px;
 
 $minWidth: 360; // Минимальная ширина страницы
 $maxWidth: 1920; // Ширина макета
-$maxWidthContainer: rem(1320); // Максимальная ширина ограничивающего контейнера
+$maxWidthContainer: rem(1494); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
 // ЦВЕТА
 $accent: #194EA4;
 
 // Z-Index
+
+$header: var(--header-height, #{rem(105)});
 
 $ui-index-1: 1; // Для наполняющих элементов в общем потоке
 $ui-index-2: 2; // Для наполняющих элементов в общем потоке
@@ -50,3 +51,27 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 @import "footer";
 
 //=======================================
+
+.hero {
+    background: #194EA4;
+    color: #fff;
+    padding-top: $header;
+    padding-bottom: 4.375rem;
+    border-radius: 0 0 3.25rem 3.25rem;
+
+
+    // .hero__content
+    &__content {
+        padding-top: rem(220);
+    }
+
+    // .hero__title
+    &__title {
+        font-size: 4.74894rem;
+        font-weight: 300;
+        line-height: 97.731%;
+        letter-spacing: -0.144rem;
+    }
+}
+
+.container {}
