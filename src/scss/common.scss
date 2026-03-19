@@ -1,0 +1,67 @@
+* {
+	scroll-margin-top: rem(56);
+
+	@media (min-width: $md5) {
+		scroll-margin-top: rem(74);
+	}
+
+	@media (min-width: $md3) {
+		scroll-margin-top: rem(88);
+	}
+}
+
+body {
+	font-family: $fontfamily, sans-serif;
+	font-size: 1rem;
+	min-width: rem($minWidth);
+	min-height: 100%;
+	line-height: normal;
+	margin-right: 0 !important;
+
+	&.open-mobile-menu {
+		@media (max-width: $md3) {
+			overflow: hidden;
+		}
+	}
+}
+
+// ================== ОБОЛОЧКА ==============================
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	overflow-x: clip;
+}
+
+.page {
+	flex: 1 1 auto;
+	overflow-x: clip;
+}
+
+// ================== ОБОЛОЧКА ===============================
+
+// ================== LAYOUT =================================
+
+.container {
+	margin: 0 auto;
+	padding: 0 1.25rem;
+	max-width: $maxWidthContainer;
+
+	@media (min-width: $md4) {
+		padding: 0 rem(40);
+		box-sizing: content-box;
+	}
+
+}
+
+//=============== LAYOUT ===============================
+
+// =============== MODULES ====================
+@import "./modules/popup";
+
+
+// =============== MODULES ====================

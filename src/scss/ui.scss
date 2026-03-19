@@ -1,0 +1,165 @@
+.color-accent {
+	color: $accent;
+}
+
+// .swiper-button-next,
+// .swiper-button-prev {
+// 	position: static;
+// 	z-index: 1;
+// 	transform: none;
+// 	margin-top: 0 !important;
+// 	width: 3rem;
+// 	height: 3rem;
+// 	font-size: 1.5rem;
+// 	border-radius: 0.75rem;
+// 	background: $bg-dark;
+// 	color: $text-white;
+// 	transition: all 0.3s ease;
+
+// 	@media (min-width:$md4) {
+// 		border-radius: 1rem;
+// 		width: 4rem;
+// 		height: 4rem;
+// 	}
+
+// 	& svg {
+// 		display: none;
+// 	}
+
+// 	@media (any-hover: hover) {
+// 		&:hover {
+// 			background: $accent;
+// 		}
+// 	}
+// }
+
+// .swiper-pagination {
+// 	&.swiper-pagination-lock {
+// 		display: none !important;
+// 	}
+
+// 	&.swiper-pagination-bullets {
+// 		position: static;
+// 		bottom: auto;
+// 		left: auto;
+// 		transform: none;
+// 		width: 100%;
+// 		display: flex;
+// 		justify-content: center;
+// 		--swiper-pagination-bullet-horizontal-gap: #{rem(10)};
+// 		--swiper-pagination-bullet-size: #{rem(10)};
+// 		--swiper-pagination-bullet-inactive-opacity: 0.4;
+
+// 		&.swiper-pagination-bullets-dynamic {
+// 			transform: none;
+// 			margin-inline: auto;
+// 			display: block;
+// 			width: 100%;
+// 		}
+
+// 		.swiper-pagination-bullet {
+// 			background: currentColor;
+// 			position: relative;
+
+// 			&::before {
+// 				content: "";
+// 				position: absolute;
+// 				width: rem(24);
+// 				height: rem(24);
+// 				top: 50%;
+// 				left: 50%;
+// 				transform: translate(-50%, -50%);
+// 			}
+
+// 			&.swiper-pagination-bullet-active {
+// 				opacity: 1;
+// 			}
+// 		}
+// 	}
+
+// 	&.swiper-pagination-fraction {
+// 		position: static;
+// 		width: auto;
+// 		font-size: 1.25rem;
+// 		line-height: 150%;
+// 	}
+// }
+
+// .swiper-scrollbar {
+// 	margin-top: 1rem;
+// 	position: static !important;
+// 	--swiper-scrollbar-bg-color: #{$bg-line};
+// 	--swiper-scrollbar-drag-bg-color: #{$bg-white}
+// }
+
+
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// Стилизация селекта
+// $selectBg: $orange;
+// $selectColor: $dark;
+
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+// ::selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+
+// Стилизация скролла
+
+$scrollbarColor: $accent;
+
+::-webkit-scrollbar {
+	width: rem(8);
+}
+
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $scrollbarColor;
+	border-radius: rem(8);
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: darken($color: $scrollbarColor, $amount: 10);
+		}
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
