@@ -51,26 +51,28 @@
         <div class="wrapper">
             <header class="header">
                 <div class="header__container container">
-                    <a href="#" class="header__logo">
-                        <img src="img/logo.svg" alt="Логотип">
-                    </a>
-                    <div class="header__menu menu">
-                        <div class="menu__content">
-                            <nav aria-label="Меню в шапке" class="menu__navbar">
-                                <ul class="menu__list">
-                                    <li class="menu__item"><a href="#about" class="menu__link">О компании</a></li>
-                                    <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
-                                    <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
-                                    <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
-                                </ul>
-                            </nav>
-                            <a href="mailto:t-center@iskra-volga.ru" class="menu__email icon-envelope">t-center@iskra-volga.ru</a>
+                    <div class="header__wrapper">
+                        <a href="#" class="header__logo">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </a>
+                        <div class="header__menu menu">
+                            <div class="menu__content">
+                                <nav aria-label="Меню в шапке" class="menu__navbar">
+                                    <ul class="menu__list">
+                                        <li class="menu__item"><a href="#about" class="menu__link">О компании</a></li>
+                                        <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                                        <li class="menu__item"><a href="#gallery" class="menu__link">Галерея</a></li>
+                                        <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                                    </ul>
+                                </nav>
+                                <a href="mailto:t-center@iskra-volga.ru" class="menu__email icon-envelope">t-center@iskra-volga.ru</a>
+                            </div>
                         </div>
+                        <a href="mailto:t-center@iskra-volga.ru" class="header__email icon-envelope">t-center@iskra-volga.ru</a>
+                        <button type="button" aria-label="Открыть мобильное меню" class="header__menu-toggler icon-menu">
+                            <span></span><span></span><span></span>
+                        </button>
                     </div>
-                    <a href="mailto:t-center@iskra-volga.ru" class="header__email icon-envelope">t-center@iskra-volga.ru</a>
-                    <button type="button" aria-label="Открыть мобильное меню" class="header__menu-toggler icon-menu">
-                        <span></span><span></span><span></span>
-                    </button>
                 </div>
             </header>
             <main class="page">
@@ -78,6 +80,10 @@
                     <div class="hero__container container">
                         <div class="hero__content">
                             <h1 class="hero__title">Научно-исследовательский испытательный центр Искра-Волга</h1>
+                            <video class="hero__video" playsinline autoplay loop muted preload="metadata" poster="img/hero-poster.jpg">
+                                <source src="files/her1o.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <source src="files/her1o.webm" type='video/webm; codecs="vp9, vorbis"'>
+                            </video>
                             <div id="about" class="hero__details">
                                 <article class="hero__about">
                                     <h2 class="hero__about-title title">О центре</h2>

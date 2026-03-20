@@ -53,25 +53,58 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 //=======================================
 
 .hero {
+    margin-top: calc(-1 * $header);
     background: #194EA4;
     color: #fff;
     padding-top: $header;
     padding-bottom: 4.375rem;
     border-radius: 0 0 3.25rem 3.25rem;
-
+    position: relative;
+    z-index: 1;
 
     // .hero__content
     &__content {
         padding-top: rem(220);
     }
 
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 47, 137, 0.51);
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(25, 78, 164, 0.00) 0%, #194EA4 100%);
+        z-index: -1;
+    }
+
+    // .hero__video
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -2;
+    }
+
+
     // .hero__title
     &__title {
         font-size: 4.74894rem;
         font-weight: 300;
         line-height: 97.731%;
-        letter-spacing: -0.144rem;
+        letter-spacing: -0.134rem;
+        padding-left: 0.75rem;
     }
 }
-
-.container {}
