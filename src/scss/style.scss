@@ -372,3 +372,82 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
         }
     }
 }
+
+.electrical-engineering-lab {
+    border-radius: 3.25rem 3.25rem 0 0;
+    background: #F2F3F8;
+    padding: rem(130) 0;
+
+    // .electrical-engineering-lab__container
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    // .electrical-engineering-lab__main
+    &__main {}
+
+    // .electrical-engineering-lab__title
+    &__title {}
+
+    // .electrical-engineering-lab__list
+    &__list {
+        margin-top: rem(60);
+        font-size: 1.25rem;
+        line-height: 115%;
+        letter-spacing: -0.02744rem;
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+
+        & li {
+            display: flex;
+            align-items: center;
+            gap: rem(25);
+
+            &::before {
+                font-size: 2.25rem;
+                height: rem(23);
+                color: #0052C3;
+                align-self: flex-start;
+                @extend %ic, .icon-arrow-long;
+            }
+        }
+    }
+
+    // .electrical-engineering-lab__benefits
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+
+    // .electrical-engineering-lab__benefit
+    &__benefit {
+        display: flex;
+        padding: 2.2rem 1.4375rem 2.2rem 2rem;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 1.5rem;
+        background: #FFF;
+        color: #283650;
+    }
+
+    // .electrical-engineering-lab__benefit-icon
+    &__benefit-icon {
+        width: 5.52563rem;
+        height: 5.52563rem;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .electrical-engineering-lab__benefit-text
+    &__benefit-text {
+        font-size: 1.25rem;
+        line-height: 115%;
+        letter-spacing: -0.02744rem;
+    }
+}
