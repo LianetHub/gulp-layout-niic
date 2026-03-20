@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     //  Fancybox
     if (typeof Fancybox !== "undefined" && Fancybox !== null) {
@@ -27,7 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     // sliders
-
+    if (document.querySelector('.testing-lab__slider')) {
+        new Swiper('.testing-lab__slider', {
+            slidesPerView: "auto",
+            spaceBetween: 14,
+            breakpoints: {
+                767.98: {
+                    slidesPerView: "auto",
+                    spaceBetween: 35,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                    spaceBetween: 35,
+                }
+            }
+        })
+    }
 
     initAnimation();
 

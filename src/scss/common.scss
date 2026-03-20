@@ -1,13 +1,5 @@
 * {
-	scroll-margin-top: rem(56);
-
-	@media (min-width: $md5) {
-		scroll-margin-top: rem(74);
-	}
-
-	@media (min-width: $md3) {
-		scroll-margin-top: rem(88);
-	}
+	scroll-margin-top: calc($header + 1rem);
 }
 
 body {
