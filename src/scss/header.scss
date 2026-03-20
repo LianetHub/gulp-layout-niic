@@ -11,13 +11,11 @@
 
 
 	// .header__container
-	&__container {
-		max-width: rem(1537);
-	}
+	&__container {}
 
 	// .header__wrapper
 	&__wrapper {
-		padding: rem(22.5) rem(30);
+		padding: rem(22.5) rem(45);
 		min-height: rem(71);
 		border-radius: 1rem;
 		background: rgba(0, 0, 0, 0.18);
