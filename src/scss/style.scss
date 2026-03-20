@@ -57,8 +57,9 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
     background: #194EA4;
     color: #fff;
     padding-top: $header;
-    padding-bottom: 4.375rem;
+    padding-bottom: 6.4rem;
     border-radius: 0 0 3.25rem 3.25rem;
+    overflow: hidden;
     position: relative;
     z-index: 1;
 
@@ -76,6 +77,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
         height: 100%;
         background: rgba(0, 47, 137, 0.51);
         z-index: -1;
+        pointer-events: none;
     }
 
     &::after {
@@ -87,6 +89,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
         height: 100%;
         background: linear-gradient(180deg, rgba(25, 78, 164, 0.00) 0%, #194EA4 100%);
         z-index: -1;
+        pointer-events: none;
     }
 
     // .hero__video
@@ -96,6 +99,7 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
         left: 0;
         width: 100%;
         z-index: -2;
+        pointer-events: none;
     }
 
 
@@ -210,10 +214,29 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
     }
 
     // .hero__numbers
-    &__numbers {}
+    &__numbers {
+        margin-top: rem(105);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 rem(110) 0 rem(45);
+    }
 
     // .hero__number
-    &__number {}
+    &__number {
+        padding-block: 0.56rem;
+
+        &:nth-child(2) {
+            padding-inline: 3rem;
+            border-left: rem(1) solid rgba(255, 255, 255, 0.21);
+        }
+
+        &:nth-child(3) {
+            border-left: rem(1) solid rgba(255, 255, 255, 0.21);
+            padding-left: 1.5rem;
+        }
+
+
+    }
 
     // .hero__number-value
     &__number-value {

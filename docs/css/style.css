@@ -699,8 +699,9 @@ body {
   background: #194EA4;
   color: #fff;
   padding-top: var(--header-height, 6.5625rem);
-  padding-bottom: 4.375rem;
+  padding-bottom: 6.4rem;
   border-radius: 0 0 3.25rem 3.25rem;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
@@ -716,6 +717,7 @@ body {
   height: 100%;
   background: rgba(0, 47, 137, 0.51);
   z-index: -1;
+  pointer-events: none;
 }
 .hero::after {
   content: "";
@@ -726,6 +728,7 @@ body {
   height: 100%;
   background: linear-gradient(180deg, rgba(25, 78, 164, 0) 0%, #194EA4 100%);
   z-index: -1;
+  pointer-events: none;
 }
 .hero__video {
   position: absolute;
@@ -733,6 +736,7 @@ body {
   left: 0;
   width: 100%;
   z-index: -2;
+  pointer-events: none;
 }
 .hero__title {
   font-size: 4.74894rem;
@@ -834,6 +838,23 @@ body {
 .hero__structure-icon {
   width: 3.30925rem;
   flex-shrink: 0;
+}
+.hero__numbers {
+  margin-top: 6.5625rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.875rem 0 2.8125rem;
+}
+.hero__number {
+  padding-block: 0.56rem;
+}
+.hero__number:nth-child(2) {
+  padding-inline: 3rem;
+  border-left: 0.0625rem solid rgba(255, 255, 255, 0.21);
+}
+.hero__number:nth-child(3) {
+  border-left: 0.0625rem solid rgba(255, 255, 255, 0.21);
+  padding-left: 1.5rem;
 }
 .hero__number-value {
   color: #FFF;
