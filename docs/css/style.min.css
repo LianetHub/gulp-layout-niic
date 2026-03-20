@@ -13,7 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
-[class^=icon-]:before,
+.measurements__item::before, [class^=icon-]:before,
 [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -31,7 +31,7 @@
   display: block;
 }
 
-.icon-arrow:before {
+.icon-arrow:before, .measurements__item:before {
   content: "\e900";
 }
 
@@ -880,7 +880,7 @@ body {
 }
 
 .testing-lab {
-  padding: 6.9375rem 0;
+  padding: 6.9375rem 0 2.12rem;
 }
 .testing-lab__slider {
   margin-top: 2.5rem;
@@ -923,4 +923,38 @@ body {
   font-size: 1.0625rem;
   line-height: 141.176%;
   letter-spacing: -0.0195rem;
+}
+
+.measurements {
+  padding: 3.75rem 0 4.9375rem;
+}
+.measurements__list {
+  margin-top: 3.125rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.measurements__item {
+  border-radius: 1.75rem;
+  padding: 1.6875rem 1.09375rem 1.6875rem 1.25rem;
+  background: #F2F3F8;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  color: #283650;
+  font-size: 1.25rem;
+  line-height: 115%;
+  letter-spacing: -0.02744rem;
+}
+.measurements__item::before {
+  width: 2.625rem;
+  height: 2.625rem;
+  font-size: 1rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E1E4F4;
+  color: #0052C3;
 }
