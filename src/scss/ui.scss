@@ -1,13 +1,27 @@
 .title {
-	font-size: 3.5rem;
 	line-height: 100.9%;
 	letter-spacing: -0.105rem;
+	font-size: 2.75rem;
+
+	@media (min-width:$md3) {
+		font-size: 3rem;
+	}
+
+	@media (min-width:$md2) {
+		font-size: 3.5rem;
+
+	}
 }
 
 .title-sm {
-	font-size: 2.57619rem;
 	line-height: 100.9%;
 	letter-spacing: -0.07731rem;
+	font-size: 2rem;
+
+	@media (min-width:$md2) {
+		font-size: 2.57619rem;
+
+	}
 }
 
 .color-accent {

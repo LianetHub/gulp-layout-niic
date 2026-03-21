@@ -60,7 +60,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
+            <header class="header open-menu">
                 <div class="container container--large">
                     <div class="header__wrapper">
                         <a href="/#" class="header__logo">
@@ -88,69 +88,77 @@
             </header>
             <main class="page">
                 <section class="hero">
-                    <div class="container container--large">
-                        <div class="hero__content">
+                    <div class="hero__content">
+                        <div class="container">
                             <h1 class="hero__title">Научно-Исследовательский Испытательный Центр Искра-Волга</h1>
-                            <video class="hero__video" playsinline autoplay loop muted preload="metadata" poster="img/hero-poster.jpg">
-                                <source src="files/hero.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                <source src="files/hero.webm" type='video/webm; codecs="vp9, vorbis"'>
-                            </video>
-                            <div id="about" class="hero__details">
-                                <article class="hero__about">
-                                    <h2 class="hero__about-title title">О центре</h2>
-                                    <p class="hero__about-desc">Научно-Исследовательский Испытательный Центр — уникальный проект, объединяющий научные исследования и&nbsp;конструкторские разработки, диагностику и испытания электротехнической продукции классов напряжений от&nbsp;0,4&nbsp;до&nbsp;500 кВ, а также обучение и подготовку специалистов для энергетики.</p>
-                                    <p class="hero__about-purpose">Цели создания НИИЦ – укрепление технологического суверенитета страны и развитие ее научно-исследовательского потенциала путем внедрения перспективных технических решений в энергетической отрасли.</p>
-                                </article>
-                                <div class="hero__structure">
-                                    <h2 class="hero__structure-title title-sm">Cтруктура НИИЦ</h2>
-                                    <ol class="hero__structure-list">
-                                        <li class="hero__structure-item">
-                                            <p class="hero__structure-text">Исследовательские и&nbsp;опытно-конструкторские отделы</p>
-                                            <div class="hero__structure-icon">
-                                                <img src="img/hero/01.svg" alt="Иконка">
-                                            </div>
-                                        </li>
-                                        <li class="hero__structure-item">
-                                            <p class="hero__structure-text">Испытательная высоковольтная лаборатория</p>
-                                            <div class="hero__structure-icon">
-                                                <img src="img/hero/02.svg" alt="Иконка">
-                                            </div>
-                                        </li>
-                                        <li class="hero__structure-item">
-                                            <p class="hero__structure-text">Лаборатории физико-механических и климатических испытаний</p>
-                                            <div class="hero__structure-icon">
-                                                <img src="img/hero/03.svg" alt="Иконка">
-                                            </div>
-                                        </li>
-                                        <li class="hero__structure-item">
-                                            <p class="hero__structure-text">Электролаборатория</p>
-                                            <div class="hero__structure-icon">
-                                                <img src="img/hero/04.svg" alt="Иконка">
-                                            </div>
-                                        </li>
-                                    </ol>
+                        </div>
+                        <video class="hero__video" playsinline autoplay loop muted preload="metadata" poster="img/hero-poster.jpg">
+                            <source src="files/hero.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="files/hero.webm" type='video/webm; codecs="vp9, vorbis"'>
+                        </video>
+                        <div id="about" class="hero__details">
+                            <div class="container container--large">
+                                <div class="hero__details-wrapper">
+                                    <article class="hero__about">
+                                        <h2 class="hero__about-title title">О центре</h2>
+                                        <p class="hero__about-desc">Научно-Исследовательский Испытательный Центр — уникальный проект, объединяющий научные исследования и&nbsp;конструкторские разработки, диагностику и испытания электротехнической продукции классов напряжений от&nbsp;0,4&nbsp;до&nbsp;500 кВ, а также обучение и подготовку специалистов для энергетики.</p>
+                                        <p class="hero__about-purpose">Цели создания НИИЦ – укрепление технологического суверенитета страны и&nbsp;развитие ее научно-исследовательского потенциала путем внедрения перспективных технических решений в&nbsp;энергетической отрасли.</p>
+                                    </article>
+                                    <div class="hero__structure">
+                                        <h2 class="hero__structure-title title-sm">Cтруктура НИИЦ</h2>
+                                        <ol class="hero__structure-list">
+                                            <li class="hero__structure-item">
+                                                <p class="hero__structure-text">Исследовательские и&nbsp;опытно-конструкторские отделы</p>
+                                                <div class="hero__structure-icon">
+                                                    <img src="img/hero/01.svg" alt="Иконка">
+                                                </div>
+                                            </li>
+                                            <li class="hero__structure-item">
+                                                <p class="hero__structure-text">Испытательная высоковольтная лаборатория</p>
+                                                <div class="hero__structure-icon">
+                                                    <img src="img/hero/02.svg" alt="Иконка">
+                                                </div>
+                                            </li>
+                                            <li class="hero__structure-item">
+                                                <p class="hero__structure-text">Лаборатории физико-механических и климатических испытаний</p>
+                                                <div class="hero__structure-icon">
+                                                    <img src="img/hero/03.svg" alt="Иконка">
+                                                </div>
+                                            </li>
+                                            <li class="hero__structure-item">
+                                                <p class="hero__structure-text">Электролаборатория</p>
+                                                <div class="hero__structure-icon">
+                                                    <img src="img/hero/04.svg" alt="Иконка">
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
-                            <ul class="hero__numbers">
-                                <li class="hero__number" data-animate="bottom">
-                                    <div class="hero__number-value">
-                                        <span data-counter>2300</span> м²
-                                    </div>
-                                    <div class="hero__number-subtitle">общая площадь здания</div>
-                                </li>
-                                <li class="hero__number" data-animate="bottom">
-                                    <div class="hero__number-value">
-                                        <span data-counter>1500</span> м²
-                                    </div>
-                                    <div class="hero__number-subtitle">площадь лаборатории</div>
-                                </li>
-                                <li class="hero__number" data-animate="bottom">
-                                    <div class="hero__number-value">
-                                        <span data-counter>200</span> ед.
-                                    </div>
-                                    <div class="hero__number-subtitle">оборудования</div>
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="hero__numbers">
+                            <div class="container">
+                                <ul class="hero__numbers-list">
+                                    <li class="hero__number" data-animate="bottom">
+                                        <div class="hero__number-value">
+                                            <span data-counter>2300</span> м²
+                                        </div>
+                                        <div class="hero__number-subtitle">общая площадь здания</div>
+                                    </li>
+                                    <li class="hero__number" data-animate="bottom">
+                                        <div class="hero__number-value">
+                                            <span data-counter>1500</span> м²
+                                        </div>
+                                        <div class="hero__number-subtitle">площадь лаборатории</div>
+                                    </li>
+                                    <li class="hero__number" data-animate="bottom">
+                                        <div class="hero__number-value">
+                                            <span data-counter>200</span> ед.
+                                        </div>
+                                        <div class="hero__number-subtitle">оборудования</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector('.header');
 
         // menu
-        if (target.closest('[data-menu-toggler]')) {
+        if (target.closest('.header__menu-toggler')) {
             header.classList.toggle('open-menu');
         }
 
@@ -31,11 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesPerView: "auto",
             spaceBetween: 14,
             breakpoints: {
-                767.98: {
-                    slidesPerView: "auto",
-                    spaceBetween: 35,
-                },
-                991.98: {
+                1199.98: {
                     slidesPerView: 3,
                     spaceBetween: 35,
                 }
