@@ -46,13 +46,24 @@
         <link rel="stylesheet" href="css/reset.min.css">
         <link rel="stylesheet" href="css/style.min.css">
 
+        <noscript>
+            <style>
+                [data-animate] {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                    transition: none;
+                }
+            </style>
+        </noscript>
+
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
                 <div class="container container--large">
                     <div class="header__wrapper">
-                        <a href="#" class="header__logo">
+                        <a href="/#" class="header__logo">
                             <img src="img/logo.svg" alt="Логотип">
                         </a>
                         <div class="header__menu menu">
@@ -121,21 +132,21 @@
                                 </div>
                             </div>
                             <ul class="hero__numbers">
-                                <li class="hero__number">
+                                <li class="hero__number" data-animate="bottom">
                                     <div class="hero__number-value">
-                                        <span data-counting>2300</span> м²
+                                        <span data-counter>2300</span> м²
                                     </div>
                                     <div class="hero__number-subtitle">общая площадь здания</div>
                                 </li>
-                                <li class="hero__number">
+                                <li class="hero__number" data-animate="bottom">
                                     <div class="hero__number-value">
-                                        <span data-counting>1500</span> м²
+                                        <span data-counter>1500</span> м²
                                     </div>
                                     <div class="hero__number-subtitle">площадь лаборатории</div>
                                 </li>
-                                <li class="hero__number">
+                                <li class="hero__number" data-animate="bottom">
                                     <div class="hero__number-value">
-                                        <span data-counting>200</span> ед.
+                                        <span data-counter>200</span> ед.
                                     </div>
                                     <div class="hero__number-subtitle">оборудования</div>
                                 </li>
@@ -145,10 +156,10 @@
                 </section>
                 <section class="testing-lab">
                     <div class="testing-lab__container container">
-                        <h2 class="testing-lab__title title">Испытательная лаборатория</h2>
+                        <h2 class="testing-lab__title title" data-animate="bottom">Испытательная лаборатория</h2>
                         <div class="testing-lab__slider swiper">
                             <ul class="swiper-wrapper">
-                                <li class="testing-lab-card swiper-slide">
+                                <li class="testing-lab-card swiper-slide" data-animate="bottom">
                                     <div class="testing-lab-card__image">
                                         <img src="img/testing-lab/01.jpg" class="cover-image" alt="Фото лаборатории">
                                     </div>
@@ -156,7 +167,7 @@
                                         <h3 class="testing-lab-card__title">Новое <br> здание</h3>
                                         <p class="testing-lab-card__desc">Технологические решения для эффективной работы оборудования и выполнения испытаний заложены на&nbsp;этапе проектирования и строительства здания</p>
                                     </div>
-                                </li><li class="testing-lab-card swiper-slide">
+                                </li><li class="testing-lab-card swiper-slide" data-animate="bottom">
                                     <div class="testing-lab-card__image">
                                         <img src="img/testing-lab/02.jpg" class="cover-image" alt="Фото лаборатории">
                                     </div>
@@ -164,7 +175,7 @@
                                         <h3 class="testing-lab-card__title">Современное оборудование</h3>
                                         <p class="testing-lab-card__desc">Оснащенность испытательным оборудованием и&nbsp;средствами измерений для выполнения широкого спектра испытаний электротехнической&nbsp;продукции и материалов</p>
                                     </div>
-                                </li><li class="testing-lab-card swiper-slide">
+                                </li><li class="testing-lab-card swiper-slide" data-animate="bottom">
                                     <div class="testing-lab-card__image">
                                         <img src="img/testing-lab/03.jpg" class="cover-image" alt="Фото лаборатории">
                                     </div>
@@ -179,39 +190,39 @@
                 </section>
                 <section id="services" class="measurements">
                     <div class="measurements__container container">
-                        <h2 class="measurements__title title">Испытания и измерения</h2>
+                        <h2 class="measurements__title title" data-animate="bottom">Испытания и измерения</h2>
                         <ul class="measurements__list">
-                            <li class="measurements__item">Высоковольтные испытания электрической прочности изоляции оборудования переменным и импульсным напряжением</li><li class="measurements__item">Испытание токовыми нагрузками сильноточных и слаботочных токовых соединений</li><li class="measurements__item">Измерение уровня частичных разрядов в изоляции</li><li class="measurements__item">Оценка диэлектрических свойств жидких и твердых диэлектриков</li><li class="measurements__item">Определение физико-механических свойств материалов&nbsp;электротехнических изделий</li><li class="measurements__item">Определение содержания в изоляции побочных продуктов (сажи),&nbsp;степени дегазации</li><li class="measurements__item">Неразрушающие методы контроля</li><li class="measurements__item">Климатические испытания на стойкость изделий <br> к теплу-холоду-влажности</li><li class="measurements__item">Испытание на стойкость УФ-излучению</li><li class="measurements__item">Испытания на стойкость к соляному туману</li>
+                            <li class="measurements__item" data-animate="bottom">Высоковольтные испытания электрической прочности изоляции оборудования переменным и импульсным напряжением</li><li class="measurements__item" data-animate="bottom">Испытание токовыми нагрузками сильноточных и слаботочных токовых соединений</li><li class="measurements__item" data-animate="bottom">Измерение уровня частичных разрядов в изоляции</li><li class="measurements__item" data-animate="bottom">Оценка диэлектрических свойств жидких и твердых диэлектриков</li><li class="measurements__item" data-animate="bottom">Определение физико-механических свойств материалов&nbsp;электротехнических изделий</li><li class="measurements__item" data-animate="bottom">Определение содержания в изоляции побочных продуктов (сажи),&nbsp;степени дегазации</li><li class="measurements__item" data-animate="bottom">Неразрушающие методы контроля</li><li class="measurements__item" data-animate="bottom">Климатические испытания на стойкость изделий <br> к теплу-холоду-влажности</li><li class="measurements__item" data-animate="bottom">Испытание на стойкость УФ-излучению</li><li class="measurements__item" data-animate="bottom">Испытания на стойкость к соляному туману</li>
                         </ul>
                     </div>
                 </section>
                 <section class="electrical-engineering-lab">
                     <div class="electrical-engineering-lab__container container">
                         <div class="electrical-engineering-lab__main">
-                            <h2 class="electrical-engineering-lab__title title">Электротехническая лаборатория</h2>
+                            <h2 class="electrical-engineering-lab__title title" data-animate="bottom">Электротехническая лаборатория</h2>
                             <ul class="electrical-engineering-lab__list">
-                                <li>Диагностика и испытания силовых трансформаторов</li>
-                                <li>Проверка состояния заземляющих устройств (ЗУ)</li>
-                                <li>Испытания сборных и соединительных шин</li>
-                                <li>Испытания и измерения вентильных разрядников и ОПН</li>
-                                <li>Испытания и измерения элегазовых, вакуумных, масляных&nbsp;выключателей и выключателей нагрузки</li>
-                                <li>Испытания кабельных линий</li>
+                                <li data-animate="bottom">Диагностика и испытания силовых трансформаторов</li>
+                                <li data-animate="bottom">Проверка состояния заземляющих устройств (ЗУ)</li>
+                                <li data-animate="bottom">Испытания сборных и соединительных шин</li>
+                                <li data-animate="bottom">Испытания и измерения вентильных разрядников и ОПН</li>
+                                <li data-animate="bottom">Испытания и измерения элегазовых, вакуумных, масляных&nbsp;выключателей и выключателей нагрузки</li>
+                                <li data-animate="bottom">Испытания кабельных линий</li>
                             </ul>
                         </div>
                         <ul class="electrical-engineering-lab__benefits">
-                            <li class="electrical-engineering-lab__benefit">
+                            <li class="electrical-engineering-lab__benefit" data-animate="bottom">
                                 <div class="electrical-engineering-lab__benefit-icon">
                                     <img src="img/electrical-engineering-lab/01.svg" alt="Иконка">
                                 </div>
                                 <p class="electrical-engineering-lab__benefit-text">Измерения и испытания электрооборудования на&nbsp;действующих объектах до 1000 В и выше.</p>
                             </li>
-                            <li class="electrical-engineering-lab__benefit">
+                            <li class="electrical-engineering-lab__benefit" data-animate="bottom">
                                 <div class="electrical-engineering-lab__benefit-icon">
                                     <img src="img/electrical-engineering-lab/02.svg" alt="Иконка">
                                 </div>
                                 <p class="electrical-engineering-lab__benefit-text">Наличие официально подтверждённой аттестации в&nbsp;Ростехнадзоре</p>
                             </li>
-                            <li class="electrical-engineering-lab__benefit">
+                            <li class="electrical-engineering-lab__benefit" data-animate="bottom">
                                 <div class="electrical-engineering-lab__benefit-icon">
                                     <img src="img/electrical-engineering-lab/03.svg" alt="Иконка">
                                 </div>
@@ -222,14 +233,14 @@
                 </section>
                 <section id="gallery" class="gallery">
                     <div class="gallery__container container">
-                        <div class="gallery__header">
+                        <div class="gallery__header" data-animate="bottom">
                             <h2 class="gallery__title title">Галерея центра</h2>
                             <div class="gallery__controls">
                                 <button type="button" class="gallery__prev swiper-button-prev icon-prev"></button>
                                 <button type="button" class="gallery__next swiper-button-next icon-next"></button>
                             </div>
                         </div>
-                        <div class="gallery__slider swiper">
+                        <div class="gallery__slider swiper" data-animate="bottom">
                             <div class="swiper-wrapper">
                                 <a href="img/gallery/01.jpg" class="gallery__slide swiper-slide" data-caption="Зал сверхвысоких напряжений" data-fancybox="center-gallery">
                                     <span class="gallery__image">
