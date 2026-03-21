@@ -108,7 +108,7 @@
 		z-index: 6;
 		opacity: 0;
 		visibility: hidden;
-		transition: all 0.3s ease;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
 
 		.header.open-menu & {
 			opacity: 1;
@@ -130,6 +130,8 @@
 			flex-direction: column;
 			transition: transform 0.3s ease;
 			transform: translateX(100%);
+			overflow-y: auto;
+			overflow-x: hidden;
 
 			.header.open-menu & {
 				transform: none;
@@ -277,7 +279,7 @@
 		padding: rem(4);
 
 		& span {
-			transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+			transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, width 0s ease 0.4s;
 
 			&::before {
 				transition: transform 0.45s ease 0.35s, width 0.3s ease 0s;

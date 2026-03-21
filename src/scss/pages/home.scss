@@ -3,11 +3,16 @@
     background: #194EA4;
     color: #fff;
     padding-top: $header;
-    padding-bottom: 6.4rem;
-    border-radius: 0 0 3.25rem 3.25rem;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    padding-bottom: 4.25rem;
+    border-radius: 0 0 2.375rem 2.375rem;
+
+    @media (min-width:$md3) {
+        padding-bottom: 6.4rem;
+        border-radius: 0 0 3.25rem 3.25rem;
+    }
 
     // .hero__content
     &__content {
@@ -115,7 +120,12 @@
     }
 
     // .hero__about-title
-    &__about-title {}
+    &__about-title {
+        @media (max-width:$md3) {
+            font-size: 2.75rem;
+            letter-spacing: -0.0825rem;
+        }
+    }
 
     // .hero__about-desc
     &__about-desc {
@@ -171,12 +181,17 @@
     // .hero__structure-list
     &__structure-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         row-gap: 0.73rem;
         gap: 1.69rem;
         margin-top: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (min-width:$md3) {
+            grid-template-columns: auto;
+        }
 
         @media (min-width:$md2) {
+            grid-template-columns: repeat(2, 1fr);
             row-gap: 3.06rem;
             gap: 0.83rem;
             margin-top: 2.81rem;
@@ -250,7 +265,11 @@
 
     // .hero__numbers
     &__numbers {
-        margin-top: rem(105);
+        margin-top: rem(50);
+
+        @media (min-width:$md2) {
+            margin-top: rem(105);
+        }
 
     }
 
@@ -266,13 +285,24 @@
         padding-block: 0.56rem;
 
         &:nth-child(2) {
-            padding-inline: 3rem;
             border-left: rem(1) solid rgba(255, 255, 255, 0.21);
+
+            padding-inline: 0.875rem;
+
+            @media (min-width:$md2) {
+                padding-inline: 3rem;
+
+            }
         }
 
         &:nth-child(3) {
             border-left: rem(1) solid rgba(255, 255, 255, 0.21);
-            padding-left: 1.5rem;
+            padding-left: 0.875rem;
+
+            @media (min-width:$md2) {
+                padding-left: 1.5rem;
+
+            }
         }
 
         @media (min-width: $md3) {
@@ -289,12 +319,14 @@
     &__number-value {
         color: #FFF;
         font-weight: 300;
-        line-height: 76.923%;
-        letter-spacing: -0.1875rem;
+        line-height: 83.487%;
+        letter-spacing: -0.123rem;
         font-size: 3.5rem;
 
         @media (min-width:$md3) {
+            letter-spacing: -0.1875rem;
             font-size: 4.5rem;
+            line-height: 76.923%;
         }
 
         @media (min-width:$md2) {
@@ -309,19 +341,32 @@
 
     // .hero__number-subtitle
     &__number-subtitle {
-        margin-top: 1.5rem;
         color: rgba(255, 255, 255, 0.58);
-        font-size: 1rem;
         font-weight: 500;
-        line-height: 125%;
-        letter-spacing: -0.00938rem;
+        line-height: 93.416%;
         text-transform: uppercase;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        letter-spacing: -0.00613rem;
+
+        @media (min-width:$md3) {
+            line-height: 125%;
+            letter-spacing: -0.00938rem;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+
+        }
     }
 
 }
 
 .testing-lab {
-    padding: rem(111) 0 2.12rem;
+    padding: 3.75rem 0 2.12rem;
+
+    @media (min-width:$md3) {
+        padding: rem(111) 0 2.12rem;
+
+    }
 
     // .testing-lab__container
     &__container {}
@@ -331,20 +376,32 @@
 
     // .testing-lab__slider
     &__slider {
-        margin-top: rem(40);
         overflow: visible;
+        margin-top: rem(30);
+
+        @media (min-width:$md3) {
+            margin-top: rem(40);
+
+        }
     }
 }
 
 .testing-lab-card {
-    border-radius: 2rem;
     overflow: hidden;
+    border-radius: 1.125rem;
+
+    @media (min-width:$md2) {
+        border-radius: 2rem;
+
+    }
 
     &.swiper-slide {
         width: rem(332);
+        height: 23.5rem;
 
         @media (min-width:$md2) {
             width: 100%;
+            height: 36.5625rem;
 
         }
     }
@@ -385,10 +442,10 @@
         flex-direction: column;
         justify-content: space-between;
         color: #fff;
-        padding: rem(20);
+        padding: rem(20) rem(50) rem(24) rem(20);
 
         @media (min-width:$md2) {
-            padding: 2rem;
+            padding: 2rem 3rem 2rem 2rem;
 
         }
     }
@@ -397,7 +454,8 @@
     &__title {
         line-height: 92.308%;
         letter-spacing: 0.02306rem;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+
 
         @media (min-width:$md2) {
             font-size: 2rem;
@@ -411,19 +469,25 @@
 
     // .testing-lab-card__desc
     &__desc {
-        letter-spacing: -0.0195rem;
         line-height: 130%;
+        letter-spacing: -0.01306rem;
 
         @media (min-width:$md2) {
             line-height: 141.176%;
             font-size: 1.0625rem;
+            letter-spacing: -0.0195rem;
 
         }
     }
 }
 
 .measurements {
-    padding: rem(60) 0 rem(79);
+    padding: rem(46) 0 rem(50);
+
+    @media (min-width:$md2) {
+        padding: rem(60) 0 rem(79);
+
+    }
 
     // .measurements__container
     &__container {}
@@ -433,45 +497,82 @@
 
     // .measurements__list
     &__list {
-        margin-top: rem(50);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.45rem;
+        margin-top: rem(30);
+
+        @media (min-width:$md2) {
+            gap: 1rem;
+            margin-top: rem(50);
+
+        }
     }
 
     // .measurements__item
     &__item {
-        border-radius: 1.75rem;
-        padding: 1.6875rem 1.09375rem 1.6875rem 1.25rem;
+
         background: #F2F3F8;
         display: flex;
         align-items: center;
-        gap: rem(18);
-        color: #283650;
-        font-size: 1.125rem;
-        line-height: 115%;
-        letter-spacing: -0.02744rem;
 
-        &::before {
-            width: 2.625rem;
-            height: 2.625rem;
-            font-size: 1rem;
-            flex-shrink: 0;
-            border-radius: 50%;
+        color: #283650;
+        font-size: 0.875rem;
+        line-height: 120%;
+        letter-spacing: -0.0125rem;
+        border-radius: 0.79469rem;
+        padding: 0.75rem 0.625rem;
+
+        & span {
             display: flex;
-            justify-content: center;
             align-items: center;
-            background: #E1E4F4;
-            color: #0052C3;
-            @extend %ic, .icon-arrow;
+            gap: rem(8);
+
+            @media (min-width:$md3) {
+                gap: rem(18);
+            }
+
+            &::before {
+
+                flex-shrink: 0;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: flex-start;
+                background: #E1E4F4;
+                color: #0052C3;
+                width: 1.375rem;
+                height: 1.375rem;
+                font-size: 0.65rem;
+
+                @media (min-width:$md3) {
+                    width: 2.625rem;
+                    height: 2.625rem;
+                    font-size: 1rem;
+                }
+
+                @extend %ic, .icon-arrow;
+            }
         }
 
-        @media (min-width: $md3) {
+
+
+        @media (min-width:$md5) {
             @for $i from 1 through 2 {
                 &:nth-child(2n + #{$i}) {
                     transition-delay: $i * 0.25s;
                 }
             }
+        }
+
+        @media (min-width: $md3) {
+            line-height: 115%;
+            padding: 1.6875rem 1.09375rem 1.6875rem 1.25rem;
+            font-size: 1.125rem;
+            border-radius: 1.75rem;
+            letter-spacing: -0.02744rem;
+
         }
 
         @media (min-width:$md2) {
@@ -483,18 +584,22 @@
 .electrical-engineering-lab {
     border-radius: 3.25rem 3.25rem 0 0;
     background: #F2F3F8;
-    padding: rem(65) 0 rem(55);
+    padding: rem(65) 0 rem(96);
 
     @media (min-width:$md2) {
-        padding: rem(130) 0 rem(112);
+        padding: rem(130) 0 rem(164);
 
     }
 
     // .electrical-engineering-lab__container
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 3.75rem;
+
+        @media (min-width:$md3) {
+            gap: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     // .electrical-engineering-lab__main
@@ -505,14 +610,21 @@
 
     // .electrical-engineering-lab__list
     &__list {
-        margin-top: rem(30);
-        line-height: 115%;
+        margin-top: rem(36);
+        line-height: 143.75%;
         letter-spacing: -0.02744rem;
         display: flex;
         flex-direction: column;
-        gap: rem(20);
-        font-size: 1.125rem;
+        gap: rem(22);
+        font-size: 1rem;
+        max-width: 31.5rem;
 
+        @media (min-width:$md3) {
+            line-height: 115%;
+            margin-top: rem(30);
+            font-size: 1.125rem;
+
+        }
 
         @media (min-width:$md2) {
             margin-top: rem(60);
@@ -525,8 +637,13 @@
             align-items: center;
             gap: rem(25);
 
+            @media (min-width:$md3) {
+                gap: rem(25);
+
+            }
+
             &::before {
-                font-size: 2.25rem;
+
                 height: rem(23);
                 display: flex;
                 flex-direction: column;
@@ -534,6 +651,12 @@
                 align-items: center;
                 color: #0052C3;
                 align-self: flex-start;
+                font-size: rem(28);
+
+                @media (min-width:$md3) {
+                    font-size: 2.25rem;
+                }
+
                 @extend %ic, .icon-arrow-long;
             }
         }
@@ -549,18 +672,25 @@
     // .electrical-engineering-lab__benefit
     &__benefit {
         display: flex;
-        padding: 2.2rem 1.4375rem 2.2rem 2rem;
+
         align-items: center;
-        gap: 2rem;
-        border-radius: 1.5rem;
         background: #FFF;
         color: #283650;
+        border-radius: 1rem;
+        padding: 1.5rem 1.4375rem 1.5rem 1.5rem;
+        gap: 1.5rem;
+
+        @media (min-width:$md3) {
+            gap: 2rem;
+            padding: 2.2rem 1.4375rem 2.2rem 2rem;
+            border-radius: 1.5rem;
+
+        }
     }
 
     // .electrical-engineering-lab__benefit-icon
     &__benefit-icon {
         width: 4.25rem;
-        height: 4.25rem;
         flex-shrink: 0;
         display: flex;
         justify-content: center;
@@ -577,6 +707,8 @@
     &__benefit-text {
         letter-spacing: -0.02744rem;
         line-height: 143.75%;
+        max-width: 29rem;
+        width: 100%;
 
         @media (min-width:$md2) {
             line-height: 115%;
@@ -587,10 +719,18 @@
 }
 
 .gallery {
-    border-radius: 3.25rem 3.25rem 0 0;
+
     background: #194EA4;
     color: #FFF;
-    padding: rem(60) 0 rem(82);
+    padding: rem(60) 0 rem(88);
+    border-radius: 2.375rem 2.375rem 0 0;
+    margin-top: rem(-38);
+
+
+    @media (min-width:$md3) {
+        margin-top: rem(-52);
+        border-radius: 3.25rem 3.25rem 0 0;
+    }
 
     @media (min-width:$md2) {
         padding: rem(100) 0 rem(162);
@@ -624,8 +764,13 @@
 
     // .gallery__slider
     &__slider {
-        margin-top: 3rem;
         overflow: visible;
+        margin-top: 2.75rem;
+
+        @media (min-width:$md3) {
+            margin-top: 3rem;
+
+        }
     }
 
     // .gallery__slide
@@ -660,8 +805,13 @@
         color: #FFF;
         line-height: 127.273%;
         letter-spacing: -0.02744rem;
-        padding: rem(20) rem(30);
-        font-size: 1.125rem;
+
+        padding: rem(16) rem(16);
+
+        @media (min-width:$md3) {
+            padding: rem(20) rem(30);
+            font-size: 1.125rem;
+        }
 
         @media (min-width:$md2) {
             padding: rem(40) rem(50);
