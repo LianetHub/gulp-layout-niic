@@ -1,6 +1,8 @@
 .fancybox__container {
 	max-width: 100% !important;
 	padding: 0 !important;
+	--f-caption-font: 2rem #{$fontfamily},
+	sans-serif;
 }
 
 .fancybox__slide {
@@ -10,6 +12,8 @@
 		padding: 1.25rem;
 	}
 }
+
+
 
 .fancybox__backdrop {
 	background: rgba($color: #272a2d, $alpha: 0.8);

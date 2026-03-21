@@ -43,6 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    if (document.querySelector('.gallery__slider')) {
+        new Swiper('.gallery__slider', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".gallery__next",
+                prevEl: ".gallery__prev"
+            }
+        })
+    }
+
     initAnimation();
 
 
