@@ -34,7 +34,24 @@ $accent: #194EA4;
 
 // Z-Index
 
-$header: var(--header-height, #{rem(105)});
+$header: var(--header-height, #{rem(140)});
+
+:root {
+    --header-height: #{rem(78)};
+
+    @media (min-width:$md5) {
+        --header-height: #{rem(86)};
+    }
+
+    @media (min-width:$md4) {
+        --header-height: #{rem(111)};
+
+    }
+
+    @media (min-width:$md2) {
+        --header-height: #{rem(140)};
+    }
+}
 
 $ui-index-1: 1; // Для наполняющих элементов в общем потоке
 $ui-index-2: 2; // Для наполняющих элементов в общем потоке

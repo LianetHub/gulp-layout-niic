@@ -1,8 +1,12 @@
 .fancybox__container {
 	max-width: 100% !important;
 	padding: 0 !important;
-	--f-caption-font: 2rem #{$fontfamily},
-	sans-serif;
+
+	@media (min-width:$md5) {
+		--f-caption-font: 2rem #{$fontfamily},
+		sans-serif;
+
+	}
 }
 
 .fancybox__slide {

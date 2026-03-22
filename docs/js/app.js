@@ -49,74 +49,79 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.querySelector('.gallery__slider')) {
         new Swiper('.gallery__slider', {
             slidesPerView: "auto",
-            spaceBetween: 16,
+            spaceBetween: 8,
             navigation: {
                 nextEl: ".gallery__next",
                 prevEl: ".gallery__prev"
+            },
+            breakpoints: {
+                575.98: {
+                    spaceBetween: 16,
+                }
             }
         })
     }
 
-    // initAnimation();
+    initAnimation();
 
 
 });
 
 
-// function initAnimation() {
-//     const counters = document.querySelectorAll('[data-counter]');
-//     const animationSections = document.querySelectorAll('[data-animate]');
+function initAnimation() {
+    const counters = document.querySelectorAll('[data-counter]');
+    const animationSections = document.querySelectorAll('[data-animate]');
 
-//     if (counters.length > 0) {
-//         const animationDuration = 2000;
+    if (counters.length > 0) {
+        const animationDuration = 2000;
 
-//         const counterObserver = new IntersectionObserver((entries) => {
-//             entries.forEach(entry => {
-//                 if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-//                     entry.target.classList.add('animated');
-//                     startCounter(entry.target);
-//                 }
-//             });
-//         }, { threshold: 0.1 });
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                    entry.target.classList.add('animated');
+                    startCounter(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
 
-//         counters.forEach(el => counterObserver.observe(el));
+        counters.forEach(el => counterObserver.observe(el));
 
-//         function startCounter(el) {
-//             const originalText = el.textContent.trim();
-//             const targetNumber = parseInt(originalText.replace(/\D/g, ''), 10);
-//             const suffix = originalText.replace(/[0-9\s]/g, '');
+        function startCounter(el) {
+            const originalText = el.textContent.trim();
+            const targetNumber = parseInt(originalText.replace(/\D/g, ''), 10);
+            const suffix = originalText.replace(/[0-9\s]/g, '');
 
-//             const startNumber = Math.floor(targetNumber * 0.8);
-//             const startTime = performance.now();
+            const startNumber = Math.floor(targetNumber * 0.8);
+            const startTime = performance.now();
 
-//             const updateCounter = (currentTime) => {
-//                 const elapsedTime = currentTime - startTime;
-//                 const progress = Math.min(elapsedTime / animationDuration, 1);
+            const updateCounter = (currentTime) => {
+                const elapsedTime = currentTime - startTime;
+                const progress = Math.min(elapsedTime / animationDuration, 1);
 
-//                 const currentCount = Math.floor(startNumber + (progress * (targetNumber - startNumber)));
+                const currentCount = Math.floor(startNumber + (progress * (targetNumber - startNumber)));
 
-//                 el.textContent = currentCount + (suffix ? suffix : '');
+                el.textContent = currentCount + (suffix ? suffix : '');
 
-//                 if (progress < 1) {
-//                     requestAnimationFrame(updateCounter);
-//                 } else {
-//                     el.textContent = targetNumber + (suffix ? suffix : '');
-//                 }
-//             };
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    el.textContent = targetNumber + (suffix ? suffix : '');
+                }
+            };
 
-//             requestAnimationFrame(updateCounter);
-//         }
-//     }
+            requestAnimationFrame(updateCounter);
+        }
+    }
 
-//     if (animationSections.length > 0) {
-//         const sectionObserver = new IntersectionObserver((entries) => {
-//             entries.forEach(entry => {
-//                 if (entry.isIntersecting) {
-//                     entry.target.classList.add('animated');
-//                 }
-//             });
-//         }, { threshold: 0.1 });
+    if (animationSections.length > 0) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.1 });
 
-//         animationSections.forEach(section => sectionObserver.observe(section));
-//     }
-// }
+        animationSections.forEach(section => sectionObserver.observe(section));
+    }
+}
