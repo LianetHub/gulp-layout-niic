@@ -6,7 +6,7 @@
     <body>
         <div class="wrapper">
             @@include('html/_header.html', {})
-            <main class="page">
+            <main class="page" role="main" itemprop="mainContentOfPage">
                 <section class="hero">
                     <div class="hero__content">
                         <div class="container">
@@ -92,9 +92,9 @@
                         </div>
                     </div>
                 </section>
-                <section id="services" class="measurements">
+                <section id="services" class="measurements" itemscope itemtype="http://schema.org/Service">
                     <div class="measurements__container container">
-                        <h2 class="measurements__title title" data-animate="bottom">Испытания и измерения</h2>
+                        <h2 class="measurements__title title" data-animate="bottom" itemprop="name">Испытания и измерения</h2>
                         <ul class="measurements__list">
                             @@loop('./html/templates/_measurements-item.html', './html/json/measurements.json')
                         </ul>
@@ -135,10 +135,10 @@
                         </ul>
                     </div>
                 </section>
-                <section id="gallery" class="gallery">
+                <section id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
                     <div class="gallery__container container">
                         <div class="gallery__header" data-animate="bottom">
-                            <h2 class="gallery__title title">Галерея центра</h2>
+                            <h2 class="gallery__title title" itemprop="name">Галерея центра</h2>
                             <div class="gallery__controls">
                                 <button type="button" class="gallery__prev swiper-button-prev icon-prev"></button>
                                 <button type="button" class="gallery__next swiper-button-next icon-next"></button>

@@ -28,17 +28,17 @@
 	<meta property="og:locale" content="ru_RU">
 	<!-- Open Graph  -->
 	<!-- plugins -->
-	<link rel="preload" href="css/libs/swiper-bundle.min.css?_v=20260322111108" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/libs/swiper-bundle.min.css?_v=20260322120945" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260322111108">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20260322120945">
 	</noscript>
-	<link rel="preload" href="css/libs/fancybox.css?_v=20260322111108" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/libs/fancybox.css?_v=20260322120945" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260322111108">
+		<link rel="stylesheet" href="css/libs/fancybox.css?_v=20260322120945">
 	</noscript>
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20260322111108">
-	<link rel="stylesheet" href="css/style.min.css?_v=20260322111108">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20260322120945">
+	<link rel="stylesheet" href="css/style.min.css?_v=20260322120945">
 	<noscript>
 		<style>
 			[data-animate] {
@@ -50,24 +50,82 @@
 
 		</style>
 	</noscript>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [{
+				"@type": "Organization",
+				"@id": "https://iskra-volga.ru/#organization",
+				"name": "Искра-Волга",
+				"legalName": "ООО «ИСКРА-ВОЛГА»",
+				"url": "https://iskra-volga.ru/",
+				"logo": "https://iskra-volga.ru/img/logo.svg",
+				"description": "Научно-исследовательский испытательный центр: высоковольтные, климатические и физико-механические испытания электрооборудования до 500 кВ.",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"email": "t-center@iskra-volga.ru",
+					"contactType": "customer service"
+				},
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "п/р Промышленная Площадка Зеленодольск",
+					"addressLocality": "Зеленодольск",
+					"addressRegion": "Республика Татарстан",
+					"postalCode": "422527",
+					"addressCountry": "RU"
+				}
+			}, {
+				"@type": "Service",
+				"serviceType": "Испытания и измерения электрооборудования",
+				"provider": {
+					"@id": "https://iskra-volga.ru/#organization"
+				},
+				"description": "Высоковольтные испытания, климатические испытания, физико-механические свойства материалов, диагностика силовых трансформаторов и кабельных линий.",
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Услуги испытательной лаборатории",
+					"itemListElement": [{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Высоковольтные испытания изоляции оборудования"
+						}
+					}, {
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Климатические испытания на стойкость к теплу-холоду-влажности"
+						}
+					}, {
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Диагностика и испытания силовых трансформаторов"
+						}
+					}]
+				}
+			}]
+		}
+
+	</script>
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="container container--large">
 				<div class="header__wrapper">
-					<a href="/#" class="header__logo">
-						<img src="img/logo.svg" alt="Логотип">
+					<a href="/#" class="header__logo" itemprop="url">
+						<img src="img/logo.svg" alt="Логотип Искра-Волга" itemprop="image">
 					</a>
 					<div class="header__menu menu">
 						<div class="menu__content">
-							<nav aria-label="Меню в шапке" class="menu__navbar">
+							<nav aria-label="Меню в шапке" class="menu__navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
 								<ul class="menu__list">
-									<li class="menu__item"><a href="/#about" class="menu__link">О компании</a></li>
-									<li class="menu__item"><a href="/#services" class="menu__link">Услуги</a></li>
-									<li class="menu__item"><a href="/#gallery" class="menu__link">Галерея</a></li>
-									<li class="menu__item"><a href="/#contacts" class="menu__link">Контакты</a></li>
+									<li class="menu__item"><a href="/#about" class="menu__link" itemprop="url"><span itemprop="name">О компании</span></a></li>
+									<li class="menu__item"><a href="/#services" class="menu__link" itemprop="url"><span itemprop="name">Услуги</span></a></li>
+									<li class="menu__item"><a href="/#gallery" class="menu__link" itemprop="url"><span itemprop="name">Галерея</span></a></li>
+									<li class="menu__item"><a href="/#contacts" class="menu__link" itemprop="url"><span itemprop="name">Контакты</span></a></li>
 								</ul>
 							</nav>
 							<a href="mailto:t-center@iskra-volga.ru" class="menu__email icon-envelope">t-center@iskra-volga.ru</a>
@@ -80,7 +138,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
+		<main class="page" role="main" itemprop="mainContentOfPage">
 			<section class="hero">
 				<div class="hero__content">
 					<div class="container">
@@ -161,51 +219,51 @@
 					<h2 class="testing-lab__title title" data-animate="bottom">Испытательная лаборатория</h2>
 					<div class="testing-lab__slider swiper">
 						<ul class="swiper-wrapper">
-							<li class="testing-lab-card swiper-slide" data-animate="bottom">
+							<li class="testing-lab-card swiper-slide" data-animate="bottom" itemscope itemtype="http://schema.org/ImageObject">
 								<div class="testing-lab-card__image">
-									<img src="img/testing-lab/01.jpg" class="cover-image" alt="Фото лаборатории">
+									<img src="img/testing-lab/01.jpg" class="cover-image" alt="Новое здание НИИЦ" itemprop="contentUrl">
 								</div>
 								<div class="testing-lab-card__content">
-									<h3 class="testing-lab-card__title">Новое <br> здание</h3>
-									<p class="testing-lab-card__desc">Технологические решения для эффективной работы оборудования и&nbsp;выполнения испытаний заложены на&nbsp;этапе&nbsp;проектирования и&nbsp;строительства здания</p>
+									<h3 class="testing-lab-card__title" itemprop="name">Новое <br> здание</h3>
+									<p class="testing-lab-card__desc" itemprop="description">Технологические решения для эффективной работы оборудования и&nbsp;выполнения испытаний заложены на&nbsp;этапе&nbsp;проектирования и&nbsp;строительства здания</p>
 								</div>
 							</li>
-							<li class="testing-lab-card swiper-slide" data-animate="bottom">
+							<li class="testing-lab-card swiper-slide" data-animate="bottom" itemscope itemtype="http://schema.org/ImageObject">
 								<div class="testing-lab-card__image">
-									<img src="img/testing-lab/02.jpg" class="cover-image" alt="Фото лаборатории">
+									<img src="img/testing-lab/02.jpg" class="cover-image" alt="Современное оборудование лаборатории" itemprop="contentUrl">
 								</div>
 								<div class="testing-lab-card__content">
-									<h3 class="testing-lab-card__title">Современное оборудование</h3>
-									<p class="testing-lab-card__desc">Оснащенность испытательным оборудованием и&nbsp;средствами измерений для выполнения широкого спектра испытаний электротехнической&nbsp;продукции и&nbsp;материалов</p>
+									<h3 class="testing-lab-card__title" itemprop="name">Современное оборудование</h3>
+									<p class="testing-lab-card__desc" itemprop="description">Оснащенность испытательным оборудованием и&nbsp;средствами измерений для выполнения широкого спектра испытаний электротехнической&nbsp;продукции и&nbsp;материалов</p>
 								</div>
 							</li>
-							<li class="testing-lab-card swiper-slide" data-animate="bottom">
+							<li class="testing-lab-card swiper-slide" data-animate="bottom" itemscope itemtype="http://schema.org/ImageObject">
 								<div class="testing-lab-card__image">
-									<img src="img/testing-lab/03.jpg" class="cover-image" alt="Фото лаборатории">
+									<img src="img/testing-lab/03.jpg" class="cover-image" alt="Сотрудники центра" itemprop="contentUrl">
 								</div>
 								<div class="testing-lab-card__content">
-									<h3 class="testing-lab-card__title">Высокие компетенции</h3>
-									<p class="testing-lab-card__desc">Сотрудники с испытательным стажем более&nbsp;10&nbsp;лет с&nbsp;высокими компетенциями по&nbsp;испытаниям электротехнических изделий на&nbsp;классы напряжений от&nbsp;0,4&nbsp;до&nbsp;500&nbsp;кВ</p>
+									<h3 class="testing-lab-card__title" itemprop="name">Высокие компетенции</h3>
+									<p class="testing-lab-card__desc" itemprop="description">Сотрудники с испытательным стажем более&nbsp;10&nbsp;лет с&nbsp;высокими компетенциями по&nbsp;испытаниям электротехнических изделий на&nbsp;классы напряжений от&nbsp;0,4&nbsp;до&nbsp;500&nbsp;кВ</p>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section id="services" class="measurements">
+			<section id="services" class="measurements" itemscope itemtype="http://schema.org/Service">
 				<div class="measurements__container container">
-					<h2 class="measurements__title title" data-animate="bottom">Испытания и измерения</h2>
+					<h2 class="measurements__title title" data-animate="bottom" itemprop="name">Испытания и измерения</h2>
 					<ul class="measurements__list">
-						<li class="measurements__item" data-animate="bottom"><span>Высоковольтные испытания электрической прочности изоляции оборудования переменным и импульсным напряжением</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Испытание токовыми нагрузками сильноточных и&nbsp;слаботочных токовых соединений</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Измерение уровня частичных разрядов в&nbsp;изоляции</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Оценка диэлектрических свойств жидких&nbsp;и&nbsp;твердых диэлектриков</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Определение физико-механических свойств материалов&nbsp;электротехнических изделий</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Определение содержания в&nbsp;изоляции побочных продуктов (сажи),&nbsp;степени дегазации</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Неразрушающие методы контроля</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Климатические испытания на&nbsp;стойкость изделий к&nbsp;теплу-холоду-влажности</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Испытание на&nbsp;стойкость УФ-излучению</span></li>
-						<li class="measurements__item" data-animate="bottom"><span>Испытания на&nbsp;стойкость к&nbsp;соляному туману</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Высоковольтные испытания электрической прочности изоляции оборудования переменным и импульсным напряжением</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Испытание токовыми нагрузками сильноточных и&nbsp;слаботочных токовых соединений</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Измерение уровня частичных разрядов в&nbsp;изоляции</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Оценка диэлектрических свойств жидких&nbsp;и&nbsp;твердых диэлектриков</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Определение физико-механических свойств материалов&nbsp;электротехнических изделий</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Определение содержания в&nbsp;изоляции побочных продуктов (сажи),&nbsp;степени дегазации</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Неразрушающие методы контроля</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Климатические испытания на&nbsp;стойкость изделий к&nbsp;теплу-холоду-влажности</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Испытание на&nbsp;стойкость УФ-излучению</span></li>
+						<li class="measurements__item" data-animate="bottom"><span itemprop="description">Испытания на&nbsp;стойкость к&nbsp;соляному туману</span></li>
 					</ul>
 				</div>
 			</section>
@@ -244,77 +302,84 @@
 					</ul>
 				</div>
 			</section>
-			<section id="gallery" class="gallery">
+			<section id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 				<div class="gallery__container container">
 					<div class="gallery__header" data-animate="bottom">
-						<h2 class="gallery__title title">Галерея центра</h2>
+						<h2 class="gallery__title title" itemprop="name">Галерея центра</h2>
 						<div class="gallery__controls">
 							<button type="button" class="gallery__prev swiper-button-prev icon-prev"></button>
 							<button type="button" class="gallery__next swiper-button-next icon-next"></button>
 						</div>
 					</div>
 					<div class="gallery__slider swiper" data-animate="bottom">
-						<div class="swiper-wrapper"> <a href="img/gallery/01.jpg" class="gallery__slide swiper-slide" data-caption="Зал сверхвысоких напряжений" data-fancybox="center-gallery">
+						<div class="swiper-wrapper"> <a href="img/gallery/01.jpg" class="gallery__slide swiper-slide" data-caption="Зал сверхвысоких напряжений" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/01.jpg" alt="Фото галлереи">
+									<img src="img/gallery/01.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Зал сверхвысоких напряжений</span>
-							</a><a href="img/gallery/02.jpg" class="gallery__slide swiper-slide" data-caption="Операторская" data-fancybox="center-gallery">
+								<span class="gallery__text" itemprop="caption">Зал сверхвысоких напряжений</span>
+							</a><a href="img/gallery/02.jpg" class="gallery__slide swiper-slide" data-caption="Операторская" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/02.jpg" alt="Фото галлереи">
+									<img src="img/gallery/02.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Операторская</span>
-							</a><a href="img/gallery/03.jpg" class="gallery__slide swiper-slide" data-caption="Зал высоковольтных испытаний" data-fancybox="center-gallery">
+								<span class="gallery__text" itemprop="caption">Операторская</span>
+							</a><a href="img/gallery/03.jpg" class="gallery__slide swiper-slide" data-caption="Зал высоковольтных испытаний" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/03.jpg" alt="Фото галлереи">
+									<img src="img/gallery/03.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Зал высоковольтных испытаний</span>
-							</a><a href="img/gallery/04.jpg" class="gallery__slide swiper-slide" data-caption="Зал механических испытаний" data-fancybox="center-gallery">
+								<span class="gallery__text" itemprop="caption">Зал высоковольтных испытаний</span>
+							</a><a href="img/gallery/04.jpg" class="gallery__slide swiper-slide" data-caption="Зал механических испытаний" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/04.jpg" alt="Фото галлереи">
+									<img src="img/gallery/04.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Зал механических испытаний</span>
-							</a><a href="img/gallery/05.jpg" class="gallery__slide swiper-slide" data-caption="Лаборатория физических измерений" data-fancybox="center-gallery">
+								<span class="gallery__text" itemprop="caption">Зал механических испытаний</span>
+							</a><a href="img/gallery/05.jpg" class="gallery__slide swiper-slide" data-caption="Лаборатория физических измерений" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/05.jpg" alt="Фото галлереи">
+									<img src="img/gallery/05.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Лаборатория физических измерений</span>
-							</a><a href="img/gallery/06.jpg" class="gallery__slide swiper-slide" data-caption="Лаборатория физических измерений" data-fancybox="center-gallery">
+								<span class="gallery__text" itemprop="caption">Лаборатория физических измерений</span>
+							</a><a href="img/gallery/06.jpg" class="gallery__slide swiper-slide" data-caption="Лаборатория физических измерений" data-fancybox="center-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 								<span class="gallery__image">
-									<img src="img/gallery/06.jpg" alt="Фото галлереи">
+									<img src="img/gallery/06.jpg" alt="Фото галлереи" itemprop="contentUrl">
 								</span>
-								<span class="gallery__text">Лаборатория физических измерений</span>
+								<span class="gallery__text" itemprop="caption">Лаборатория физических измерений</span>
 							</a> </div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<div class="footer__container container">
+		<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+			<div class="footer__container container" itemscope itemtype="http://schema.org/Organization">
+				<meta itemprop="name" content="Искра-Волга">
+				<meta itemprop="legalName" content="ООО «ИСКРА-ВОЛГА»">
+				<meta itemprop="url" content="https://iskra-volga.ru/">
+				<meta itemprop="logo" content="https://iskra-volga.ru/img/logo.svg">
 				<div id="contacts" class="footer__contacts">
 					<h3 class="footer__contacts-title">Свяжитесь с&nbsp;нами</h3>
 					<div class="footer__contacts-info">Оставить заявку на испытания можно по&nbsp;электронной почте:</div>
-					<a href="mailto:t-center@iskra-volga.ru" class="footer__contacts-email">t-center@iskra-volga.ru</a>
+					<a href="mailto:t-center@iskra-volga.ru" class="footer__contacts-email" itemprop="email">t-center@iskra-volga.ru</a>
 					<p class="footer__contacts-copyright">© 2026 ООО «ИСКРА-ВОЛГА».</p>
 				</div>
 				<div class="footer__side">
-					<nav aria-label="Меню в подвале" class="footer__menu">
+					<nav aria-label="Меню в подвале" class="footer__menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<ul class="footer__menu-list">
-							<li class="footer__menu-item"><a href="/#about" class="footer__menu-link">О компании</a></li>
-							<li class="footer__menu-item"><a href="/#services" class="footer__menu-link">Услуги</a></li>
-							<li class="footer__menu-item"><a href="/#gallery" class="footer__menu-link">Галерея</a></li>
-							<li class="footer__menu-item"><a href="/#contacts" class="footer__menu-link">Контакты</a></li>
+							<li class="footer__menu-item"><a href="/#about" class="footer__menu-link" itemprop="url"><span>О компании</span></a></li>
+							<li class="footer__menu-item"><a href="/#services" class="footer__menu-link" itemprop="url"><span itemprop="name">Услуги</span></a></li>
+							<li class="footer__menu-item"><a href="/#gallery" class="footer__menu-link" itemprop="url"><span itemprop="name">Галерея</span></a></li>
+							<li class="footer__menu-item"><a href="/#contacts" class="footer__menu-link" itemprop="url"><span itemprop="name">Контакты</span></a></li>
 						</ul>
 					</nav>
-					<address class="footer__address">422527, Республика Татарстан, Зеленодольский район, город Зеленодольск, п/р&nbsp;Промышленная Площадка Зеленодольск</address>
-					<a href="/policy.html" class="footer__policy">Политика конфиденциальности</a>
+					<address class="footer__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<meta itemprop="addressCountry" content="RU">
+						<span itemprop="postalCode">422527</span>, <span itemprop="addressRegion">Республика Татарстан</span>, <span itemprop="addressLocality">Зеленодольск</span>, <span itemprop="streetAddress">п/р&nbsp;Промышленная Площадка Зеленодольск</span>
+					</address>
+					<a href="/policy.html" rel="nofollow" class="footer__policy">Политика конфиденциальности</a>
 				</div>
 			</div>
 		</footer> <!-- plugins -->
-		<script defer src="js/libs/swiper-bundle.min.js?_v=20260322111108"></script>
-		<script defer src="js/libs/fancybox.umd.js?_v=20260322111108"></script>
+		<script defer src="js/libs/swiper-bundle.min.js?_v=20260322120945"></script>
+		<script defer src="js/libs/fancybox.umd.js?_v=20260322120945"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20260322111108"></script>
+		<script src="js/app.min.js?_v=20260322120945"></script>
 	</div>
 </body>
 
