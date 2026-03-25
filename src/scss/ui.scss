@@ -41,6 +41,10 @@
 	color: $accent;
 }
 
+.text-nowrap {
+	white-space: nowrap;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
 	position: static;
@@ -69,6 +73,10 @@
 		font-size: rem(40);
 	}
 
+	// &::before {
+	// 	color: #194EA4;
+	// }
+
 	& svg {
 		display: none;
 	}
@@ -79,9 +87,11 @@
 		opacity: 1;
 	}
 
-	@media (any-hover: hover) {
-		&:hover {
-			background: #D8E7FF;
+	&:not(.swiper-button-disabled) {
+		@media (any-hover: hover) {
+			&:hover {
+				background: #D8E7FF;
+			}
 		}
 	}
 }

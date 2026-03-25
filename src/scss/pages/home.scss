@@ -77,17 +77,21 @@
         max-width: 43rem;
         font-size: 2rem;
         line-height: 115%;
+        padding: 0 1rem;
+
 
         @media (min-width:$md5) {
             font-size: 3.25rem;
             line-height: 103.846%;
             letter-spacing: -0.134rem;
+            padding: 0 rem(24);
         }
 
         @media (min-width:$md2) {
             line-height: 97.731%;
             font-size: 4rem;
             max-width: 100%;
+            padding: 0 rem(42);
         }
 
         @media (min-width:$md1) {
@@ -131,7 +135,7 @@
         }
 
         @media (min-width:$md3) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 0.95fr 1fr;
             gap: 1.25rem;
         }
 
@@ -646,7 +650,7 @@
 
         @media (min-width:$md2) {
             line-height: 141.176%;
-            font-size: 1.0625rem;
+            font-size: 1.2625rem;
             letter-spacing: -0.0195rem;
 
         }
@@ -833,6 +837,7 @@
             margin-top: rem(60);
             gap: rem(30);
             font-size: 1.25rem;
+            max-width: 100%;
         }
 
         & li {
