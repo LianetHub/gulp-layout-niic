@@ -573,7 +573,7 @@ body {
 }
 
 .footer {
-  background-image: url("../img/footer-decor-mobile.jpg");
+  background-image: url("../img/footer-decor.svg");
   background-color: #fff;
   color: #3E3E3E;
   background-size: cover;
@@ -1412,7 +1412,6 @@ body {
   }
 
   .footer {
-    background-image: url("../img/footer-decor.jpg");
     margin-top: -2.375rem;
     padding: 3.44rem 0 3.75rem;
     border-radius: 2.375rem 2.375rem 0 0;
