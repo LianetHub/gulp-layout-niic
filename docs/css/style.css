@@ -1,18 +1,18 @@
 @font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Onest";
   src: url("../fonts/Onest-VariableFont_wght.woff2") format("woff2 supports variations"), url("../fonts/Onest-VariableFont_wght.woff2") format("woff2-variations"), url("../fonts/Onest-VariableFont_wght.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
 }
 
 .electrical-engineering-lab__list li::before,
@@ -1872,6 +1872,12 @@ body {
     gap: 1.25rem;
   }
 
+  .hero__structure-title {
+    min-height: 3rem;
+    -ms-flex-line-pack: end;
+        align-content: end;
+  }
+
   .hero__structure-list {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
@@ -2060,6 +2066,10 @@ body {
     margin-top: 2rem;
     max-width: 40rem;
     line-height: 150%;
+  }
+
+  .hero__structure-title {
+    min-height: 3.5rem;
   }
 
   .hero__structure-list {

@@ -245,6 +245,16 @@
         @media (min-width:$md4) {
             padding-top: rem(7);
         }
+
+        @media (min-width:$md3) {
+            min-height: rem(48);
+            align-content: end;
+        }
+
+        @media (min-width:$md2) {
+            min-height: rem(56);
+
+        }
     }
 
     // .hero__structure-list
