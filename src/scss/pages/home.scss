@@ -22,14 +22,19 @@
 
     // .hero__content
     &__content {
-        padding-top: rem(60);
+        padding-top: rem(66);
 
-        @media (min-width:$md4) {
+        @media (min-width:$md5) {
+            padding-top: rem(60);
+
+        }
+
+        @media (min-width:$md3) {
             padding-top: rem(130);
         }
 
         @media (min-width:$md1) {
-            padding-top: rem(180);
+            padding-top: rem(170);
 
         }
     }
@@ -70,32 +75,69 @@
         object-fit: cover;
     }
 
+    // .hero__offer
+    &__offer {
+        max-width: 43rem;
+
+        padding: 0 0.5rem;
+
+        @media (min-width:$md5) {
+            padding: 0 1rem;
+        }
+
+        @media (min-width:$md3) {
+            padding: 0 rem(24);
+        }
+
+        @media (min-width:$md2) {
+
+            max-width: 100%;
+            padding: 0 rem(42);
+        }
+
+    }
+
     // .hero__title
     &__title {
         font-weight: 300;
         letter-spacing: -0.09375rem;
-        max-width: 43rem;
         font-size: 2rem;
         line-height: 115%;
-        padding: 0 1rem;
+
 
 
         @media (min-width:$md5) {
             font-size: 3.25rem;
             line-height: 103.846%;
             letter-spacing: -0.134rem;
-            padding: 0 rem(24);
+
         }
 
         @media (min-width:$md2) {
             line-height: 97.731%;
             font-size: 4rem;
-            max-width: 100%;
-            padding: 0 rem(42);
         }
 
         @media (min-width:$md1) {
             font-size: 4.74894rem;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 0.5rem;
+        font-weight: 300;
+
+        font-size: 0.875rem;
+
+        @media (min-width:$md4) {
+            font-size: 1.5rem;
+            line-height: 309.412%;
+        }
+
+        @media (min-width:$md2) {
+            margin-top: 1rem;
+            font-size: 2rem;
+            line-height: 232.059%;
         }
     }
 
@@ -104,19 +146,19 @@
         margin-top: 1.125rem;
 
         @media (max-width:$md5) {
+            margin-top: 1.5rem;
+
             .container {
                 padding: 0;
             }
         }
 
-        @media (min-width:$md5) {
+        @media (min-width:$md3) {
             margin-top: 2rem;
 
         }
 
-        @media (min-width:$md2) {
-            margin-top: 6.75rem;
-        }
+
     }
 
     // .hero__details-wrapper

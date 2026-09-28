@@ -626,10 +626,6 @@ body {
   font-size: 0.75rem;
 }
 
-.footer__side {
-  max-width: 36rem;
-}
-
 .footer__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,7 +674,7 @@ body {
 }
 
 .hero__content {
-  padding-top: 3.75rem;
+  padding-top: 4.125rem;
 }
 
 .hero::before {
@@ -718,13 +714,22 @@ body {
      object-fit: cover;
 }
 
+.hero__offer {
+  max-width: 43rem;
+  padding: 0 0.5rem;
+}
+
 .hero__title {
   font-weight: 300;
   letter-spacing: -0.09375rem;
-  max-width: 43rem;
   font-size: 2rem;
   line-height: 115%;
-  padding: 0 1rem;
+}
+
+.hero__subtitle {
+  margin-top: 0.5rem;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
 .hero__details {
@@ -1458,15 +1463,18 @@ body {
     padding-bottom: 4.25rem;
   }
 
+  .hero__content {
+    padding-top: 3.75rem;
+  }
+
+  .hero__offer {
+    padding: 0 1rem;
+  }
+
   .hero__title {
     font-size: 3.25rem;
     line-height: 103.846%;
     letter-spacing: -0.134rem;
-    padding: 0 1.5rem;
-  }
-
-  .hero__details {
-    margin-top: 2rem;
   }
 
   .hero__details-wrapper {
@@ -1738,8 +1746,9 @@ body {
     -webkit-backdrop-filter: blur(0.140625rem);
   }
 
-  .hero__content {
-    padding-top: 8.125rem;
+  .hero__subtitle {
+    font-size: 1.5rem;
+    line-height: 309.412%;
   }
 
   .hero__about {
@@ -1848,7 +1857,7 @@ body {
   }
 
   .footer__side {
-    max-width: 27.5rem;
+    max-width: 29.8125rem;
   }
 
   .footer__menu {
@@ -1864,6 +1873,18 @@ body {
   .hero {
     padding-bottom: 6.4rem;
     border-radius: 0 0 3.25rem 3.25rem;
+  }
+
+  .hero__content {
+    padding-top: 8.125rem;
+  }
+
+  .hero__offer {
+    padding: 0 1.5rem;
+  }
+
+  .hero__details {
+    margin-top: 2rem;
   }
 
   .hero__details-wrapper {
@@ -2034,15 +2055,20 @@ body {
     margin-top: 1.875rem;
   }
 
-  .hero__title {
-    line-height: 97.731%;
-    font-size: 4rem;
+  .hero__offer {
     max-width: 100%;
     padding: 0 2.625rem;
   }
 
-  .hero__details {
-    margin-top: 6.75rem;
+  .hero__title {
+    line-height: 97.731%;
+    font-size: 4rem;
+  }
+
+  .hero__subtitle {
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 232.059%;
   }
 
   .hero__details-wrapper {
@@ -2201,7 +2227,7 @@ body {
 
 @media (min-width: 1399.98px) {
   .hero__content {
-    padding-top: 11.25rem;
+    padding-top: 10.625rem;
   }
 
   .hero__title {
@@ -2324,6 +2350,10 @@ body {
 
   .menu__navbar {
     padding-bottom: 1.6rem;
+  }
+
+  .hero__details {
+    margin-top: 1.5rem;
   }
 
   .hero__details .container {
